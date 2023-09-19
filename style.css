@@ -1,6 +1,7 @@
 :root {
   --left-width: 45%;
   --content-margin-left: 2rem;
+  --btn-color: #596D48;
 }
 
 @font-face {
@@ -73,14 +74,14 @@
   flex-direction: column;
 }
 
-.right > p {
+.information {
   font-weight: 700;
   font-size: 1.5rem;
   margin-top: 10rem;
   max-width: 660px;
   margin-left: var(--content-margin-left);
 }
-.right p > span {
+.right .information > span {
   display: block;
   margin-top: 2rem;
   margin-bottom: 4rem;
@@ -118,3 +119,40 @@
 .inp {
   max-width: 200px;
 } 
+
+.submit-btn {
+  /* margin-left: var(--content-margin-left); */
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: var(--btn-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  border: none;
+  box-shadow: 2px 5px 10px rgb(0, 0, 0, 0.6);
+  width: 250px;
+  cursor: pointer;
+  position: relative;
+}
+
+.submit-btn:active {
+  top: 2px;
+}
+
+p:last-child {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: var(--content-margin-left);
+}
+
+p:last-child > span > a {
+  color: var(--btn-color);
+  text-decoration: none;
+}
+
+p:last-child > span > a:hover {
+  color: black;
+}
