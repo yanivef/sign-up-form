@@ -87,15 +87,14 @@
   margin-bottom: 4rem;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
   margin-left: var(--content-margin-left);
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
-.right section{
+.right section {
   background-color: white;
   box-shadow: 2px 5px 10px rgb(0, 0, 0, 0.6);
   height: 250px;
@@ -120,15 +119,8 @@
 }
 
 .lbl {
-
 }
 
 .inp {
   max-width: 250px;
 }
-
-
-
-
-
-
