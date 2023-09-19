@@ -2,6 +2,7 @@
   --left-width: 45%;
   --content-margin-left: 2rem;
   --btn-color: #596D48;
+  --input-border-color: #E5E7EB;
 }
 
 @font-face {
@@ -88,11 +89,13 @@
 }
 
 
-
 .sign-up-container {
   background-color: white;
   box-shadow: 2px 5px 10px rgb(0, 0, 0, 0.6);
-  padding: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .sign-up-container p, .sign-up-container form {
@@ -102,12 +105,12 @@
 .sign-up-container p {
   font-weight: 700;
   font-size: 1.5rem;
+  color: #122549;
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
 }
 
-.sign-up-container form {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .label-input {
   flex: 50%;
@@ -116,12 +119,25 @@
   margin-top: 1rem;
 }
 
+.lbl {
+  color: #122549;
+}
+
 .inp {
   max-width: 200px;
+  border: solid 2px var(--input-border-color);
+  border-radius: 8px;
+  padding: 0.2rem;
+  font-size: 1rem;
 } 
 
+.inp:focus {
+  outline: none;
+  border: 1px solid #122549;
+  box-shadow: 2px 4px 10px var(--btn-color);
+}
+
 .submit-btn {
-  /* margin-left: var(--content-margin-left); */
   padding: 1rem;
   margin: 2rem;
   border-radius: 0.5rem;
