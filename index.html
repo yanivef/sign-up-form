@@ -39,8 +39,69 @@
         <div class="container">
           <p>Let's do this!</p>
           <form action="#">
-            <label class="lbl" for="first-name">First Name</label>
-            <input class="inp" type="text" name="first-name" id="first-name" />
+            <div class="label-input">
+              <label class="lbl" for="user-first-name">FIRST NAME</label>
+              <input
+                class="inp"
+                type="text"
+                name="user-first-name"
+                id="user-first-name"
+                required
+              />
+            </div>
+            <div class="label-input">
+              <label class="lbl" for="user-last-name">LAST NAME</label>
+              <input
+                class="inp"
+                type="text"
+                name="user-last-name"
+                id="user-last-name"
+                required
+              />
+            </div>
+            <div class="label-input">
+              <label class="lbl" for="user-email">EMAIL</label>
+              <input
+                class="inp"
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+              />
+            </div>
+            <div class="label-input">
+              <label class="lbl" for="user-phone">PHONE NUMBER</label>
+              <input
+                class="inp"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                maxlength="15"
+                required
+              />
+            </div>
+            <div class="label-input">
+              <label class="lbl" for="user-password">PASSWORD</label>
+              <input
+                class="inp"
+                type="password"
+                name="user-password"
+                id="user-password"
+                required
+              />
+            </div>
+            <div class="label-input">
+              <label class="lbl" for="user-confirm-password"
+                >CONFIRM PASSWORD</label
+              >
+              <input
+                class="inp"
+                type="password"
+                name="user-confirm-password"
+                id="user-confirm-password"
+                required
+              />
+            </div>
           </form>
         </div>
       </section>
