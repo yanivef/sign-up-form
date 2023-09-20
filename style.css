@@ -132,13 +132,12 @@
 } 
 
 
-.inp:invalid {
+.validation:invalid {
   border: solid 2px rgb(255,0,50, 0.4);
 }
-.inp:valid {
+.validation:valid {
   outline: solid 2px rgb(0,100,255, 0.4);
 }
-
 
 
 .inp:focus {
