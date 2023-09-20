@@ -131,11 +131,22 @@
   font-size: 1rem;
 } 
 
+
+.inp:invalid {
+  border: solid 2px rgb(255,0,50, 0.4);
+}
+.inp:valid {
+  outline: solid 2px rgb(0,100,255, 0.4);
+}
+
+
+
 .inp:focus {
   outline: none;
   border: 1px solid #122549;
   box-shadow: 2px 4px 10px var(--btn-color);
 }
+
 
 .submit-btn {
   padding: 1rem;

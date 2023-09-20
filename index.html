@@ -38,7 +38,7 @@
       <div class="form-container">
         <form action="#">
           <div class="sign-up-container">
-          <p>Let's do this!</p>
+            <p>Let's do this!</p>
             <div class="label-input">
               <label class="lbl" for="user-first-name">FIRST NAME</label>
               <input
@@ -47,6 +47,8 @@
                 name="user-first-name"
                 id="user-first-name"
                 required
+                minlength="3"
+                maxlength="15"
               />
             </div>
             <div class="label-input">
@@ -57,6 +59,8 @@
                 name="user-last-name"
                 id="user-last-name"
                 required
+                minlength="3"
+                maxlength="15"
               />
             </div>
             <div class="label-input">
@@ -67,6 +71,7 @@
                 name="user-email"
                 id="user-email"
                 required
+                placeholder="name@example.com"
               />
             </div>
             <div class="label-input">
@@ -76,8 +81,11 @@
                 type="tel"
                 name="user-phone"
                 id="user-phone"
+                minlength="9"
                 maxlength="15"
                 required
+                pattern="^[0-9]*$"
+                title="only numbers are valid"
               />
             </div>
             <div class="label-input">
@@ -88,6 +96,8 @@
                 name="user-password"
                 id="user-password"
                 required
+                minlength="5"
+                maxlength="15"
               />
             </div>
             <div class="label-input">
@@ -100,15 +110,22 @@
                 name="user-confirm-password"
                 id="user-confirm-password"
                 required
+                maxlength="15"
               />
             </div>
           </div>
           <div class="button-container">
-            <a href="#"><button type="submit" class="submit-btn">Create Account</button></a>
+            <a href="#"
+              ><button type="submit" class="submit-btn">
+                Create Account
+              </button></a
+            >
           </div>
         </form>
       </div>
-      <p>Already have an account? <span> <a href="#">Log in</a></span></p>
+      <p>
+        Already have an account? <span> <a href="#">Log in</a></span>
+      </p>
     </div>
   </body>
 </html>
